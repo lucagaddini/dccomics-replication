@@ -1,5 +1,5 @@
 <template>
-  <header class="container">
+  <header class="container-lg">
 
     <div class="logo">
       <a href="#"><img src="../assets/img/dc-logo.png" alt="DC Logo"></a>
@@ -93,7 +93,10 @@ header{
   padding: 25px;
   height: 150px;
   width: 100%;
-  //line-height: 150px;
+
+.logo{
+  width: 100%
+}
 
   nav ul{
     @include flex-cnt();
@@ -101,8 +104,8 @@ header{
     list-style: none;
     
     li{
-      padding: 15px;
-      line-height: 136px;
+      padding: 10px;
+      line-height: 146px;
       
       &:hover,
       &.active{

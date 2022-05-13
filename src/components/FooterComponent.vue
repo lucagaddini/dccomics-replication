@@ -1,11 +1,11 @@
 <template>
   <footer> 
       <div class="footer_bg_image">
-        <div class="footer_top container">
+        <div class="footer_top container-lg">
           <div class="col_left">
             <div class="row">
 
-              <div class="col-3">
+              <div class="col-3 px-3">
                 <div class="col_title">Dc Comics</div>
                 <ul>
                   <li><a href="#">Characters</a></li>
@@ -24,7 +24,7 @@
                 </ul>
               </div>
 
-              <div class="col-3">
+              <div class="col-3 px-3">
                 <div class="col_title">Dc</div>
                 <ul>
                   <li><a href="#">Terms of use</a></li>
@@ -41,7 +41,7 @@
                 </ul>
               </div>
 
-              <div class="col-3">
+              <div class="col-3 px-3">
                 <div class="col_title">Sites</div>
                 <ul>
                   <li><a href="#">DC</a></li>
@@ -61,11 +61,11 @@
         </div>
       </div>
 
-      <div class="footer_bottom container">
-        <div class="col_left">
+      <div class="footer_bottom container-lg">
+        <div class="col_left px-3">
           <button class=sign_up>Sign-Up Now!</button>
         </div>
-        <div class="col_right">
+        <div class="col_right px-3">
           <div class="follow_us_box">
             <span>Follow us</span>
             <div class="social_icons">
