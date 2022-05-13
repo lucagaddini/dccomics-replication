@@ -1,0 +1,11 @@
+@mixin flex-sbtw(){
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-cnt(){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
