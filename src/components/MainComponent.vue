@@ -16,6 +16,7 @@ export default {
 <style lang="scss">
 @import '../assets/style/_mixins.scss';
 @import '../assets/style/_vars.scss';
+@import '../assets/style/_general.scss';
 
   main{
     @include flex-cnt();

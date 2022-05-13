@@ -1,5 +1,88 @@
 <template>
-  <footer>F</footer>
+  <footer>
+    
+      <div class="footer_bg_image">
+        <div class="footer_top container">
+          <div class="col_left">
+            <div class="row">
+
+              <div class="col-2">
+                <div class="col_title">Dc Comics</div>
+                <ul>
+                  <li><a href="#">Characters</a></li>
+                  <li><a href="#">Comics</a></li>
+                  <li><a href="#">Movies</a></li>
+                  <li><a href="#">TV</a></li>
+                  <li><a href="#">Games</a></li>
+                  <li><a href="#">Videos</a></li>
+                  <li><a href="#">News</a></li>
+                </ul>
+
+                <div class="col_title">Shop</div>
+                <ul>
+                  <li><a href="#">Shop DC</a></li>
+                  <li><a href="#">Shop Collectibles</a></li>
+                </ul>
+              </div>
+
+              <div class="col-2">
+                <div class="col_title">Dc</div>
+                <ul>
+                  <li><a href="#">Terms of use</a></li>
+                  <li><a href="#">Privacy Policy (new)</a></li>
+                  <li><a href="#">Ad Choices</a></li>
+                  <li><a href="#">Advertising</a></li>
+                  <li><a href="#">Jobs</a></li>
+                  <li><a href="#">Subscriptions</a></li>
+                  <li><a href="#">Talent Workshops</a></li>
+                  <li><a href="#">CPSC Certificates</a></li>
+                  <li><a href="#">Ratings</a></li>
+                  <li><a href="#">Shop Help</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </div>
+
+              <div class="col-2">
+                <div class="col_title">Sites</div>
+                <ul>
+                  <li><a href="#">DC</a></li>
+                  <li><a href="#">MAD Magazine</a></li>
+                  <li><a href="#">DC Kids</a></li>
+                  <li><a href="#">DC Universe</a></li>
+                  <li><a href="#">DC Power Visa</a></li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col_right">
+            <img src="../assets/img/dc-logo-bg.png" alt=" DC Logo">
+          </div>
+        </div>
+      </div>
+
+      <div class="footer_bottom container">
+        <div class="col_left">
+          <button class=sign_up>Sign-Up Now!</button>
+        </div>
+        <div class="col_right">
+          <div class="follow_us_box">
+            <span>Follow us</span>
+            <div class="social_icons">
+              <a href="#"><img src="../assets/img/footer-facebook.png" alt="Facebook Logo"></a>
+              <a href="#"><img src="../assets/img/footer-twitter.png" alt="Twitter Logo"></a>
+              <a href="#"><img src="../assets/img/footer-youtube.png" alt="Youtube Logo"></a>
+              <a href="#"><img src="../assets/img/footer-pinterest.png" alt="Pinterest Logo"></a>
+              <a href="#"><img src="../assets/img/footer-periscope.png" alt="Periscope Logo"></a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    
+  </footer>
 </template>
 
 <script>
@@ -8,8 +91,89 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import '../assets/style/_mixins.scss';
 @import '../assets/style/_vars.scss';
+@import '../assets/style/_general.scss';
+
+footer{
+  background-color: $footer-bg-color;
+}
+
+.footer_bg_image{
+  background-image: url('../assets/img/footer-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.footer_top{
+
+  padding: 5px 0;
+  @include flex-sbtw();
+  color: aliceblue;
+  width: 100%;
+  height: auto;
+  margin-top: -20px;
+
+  .col_left{
+    width: 70%;
+  }
+  
+  .col_right{
+    @include flex-cnt();
+    width: 30%;
+    height: 100%;
+    img{
+      width: 100%;
+      scale: 150%;
+    }
+  }
+
+  .col_title{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $footer-col-title;
+    padding-bottom: 10px;
+  }
+
+  ul{
+    list-style: none;
+    padding: 0;
+    li{
+      text-decoration: none;
+      a{
+        color: $footer-li-color;
+        text-decoration: none;
+        text-transform: capitalize;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.footer_bottom{
+  padding: 35px 0;
+  @include flex-sbtw();
+  
+  .sign_up{
+    @include sign-up-btn();
+  }
+
+  .follow_us_box{
+    @include flex-cnt();
+
+    span{
+      color: $primary-color;
+      text-transform: uppercase;
+      font-size: 25px;
+      font-weight:600;
+      padding: 0 25px;
+    }
+    .social_icons a{
+      padding: 0 10px;
+    }
+  }
+}
 
 </style>

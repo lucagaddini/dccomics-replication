@@ -24,9 +24,10 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import '../assets/style/_mixins.scss';
 @import '../assets/style/_vars.scss';
+@import '../assets/style/_general.scss';
 
 header{
   @include flex-sbtw();
@@ -54,7 +55,7 @@ header{
         text-decoration: none;
         color: $nav-bar-text-color;
         text-transform: uppercase;
-        font-weight: bold;
+        font-weight:600;
         &:hover{
           color: $primary-color;
         }
