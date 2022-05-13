@@ -7,10 +7,12 @@
 
     <nav>
       <ul>
-        <li class="active"><a href="#">Link 1 </a></li>
-        <li><a href="#">Link 2</a></li>
-        <li><a href="#">Link 3</a></li>
-        <li><a href="#">Link 4</a></li>
+        <li 
+          v-for="(item,index) in menuItems" 
+          :key="`menu-${index}`"
+          :class="{'active' : item.isActive}"
+        ><a :href="item.link">{{item.name}}</a>
+        </li>
       </ul>
     </nav>
 
@@ -19,7 +21,64 @@
 
 <script>
 export default {
-  name: 'HeaderComponent'
+  name: 'HeaderComponent',
+  data(){
+    return{
+
+      menuItems: [
+        {
+          name: 'Characters',
+          link: '#',
+          isActive: false
+        },
+        {
+          name: 'Comics',
+          link: '#',
+          isActive: true
+        },
+        {
+          name: 'Movies',
+          link: '#',
+          isActive: false
+        },
+        {
+          name: 'TV',
+          link: '#',
+          isActive: false
+        },
+        {
+          name: 'Games',
+          link: '#',
+          isActive: false
+        },
+        {
+          name: 'Collectibles',
+          link: '#',
+          isActive: false
+        },
+        {
+          name: 'Videos',
+          link: '#',
+          isActive: false
+        },
+        {
+          name: 'Fans',
+          link: '#',
+          isActive: false
+        },
+        {
+          name: 'News',
+          link: '#',
+          isActive: false
+        },
+        {
+          name: 'Shop',
+          link: '#',
+          isActive: false
+        },
+        ]
+    }
+  }
 
 }
 </script>
