@@ -20,8 +20,10 @@ export default {
 
   main{
     @include flex-cnt();
-    height: 300px; // DA TOGLIERE
+    height: 500px; // DA TOGLIERE
+    width: 100%;
     background-color: $main-background-color;
     color: white;
+    
   }
 </style>

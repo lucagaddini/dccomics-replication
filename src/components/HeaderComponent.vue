@@ -2,7 +2,7 @@
   <header class="container">
 
     <div class="logo">
-      <img src="../assets/img/dc-logo.png" alt="DC Logo">
+      <a href="#"><img src="../assets/img/dc-logo.png" alt="DC Logo"></a>
     </div>
 
     <nav>
@@ -92,10 +92,12 @@ header{
   @include flex-sbtw();
   padding: 25px;
   height: 150px;
+  width: 100%;
   //line-height: 150px;
 
   nav ul{
     @include flex-cnt();
+    width: 100%;
     list-style: none;
     
     li{

@@ -1,12 +1,11 @@
 <template>
-  <footer>
-    
+  <footer> 
       <div class="footer_bg_image">
         <div class="footer_top container">
           <div class="col_left">
             <div class="row">
 
-              <div class="col-2">
+              <div class="col-3">
                 <div class="col_title">Dc Comics</div>
                 <ul>
                   <li><a href="#">Characters</a></li>
@@ -25,7 +24,7 @@
                 </ul>
               </div>
 
-              <div class="col-2">
+              <div class="col-3">
                 <div class="col_title">Dc</div>
                 <ul>
                   <li><a href="#">Terms of use</a></li>
@@ -42,7 +41,7 @@
                 </ul>
               </div>
 
-              <div class="col-2">
+              <div class="col-3">
                 <div class="col_title">Sites</div>
                 <ul>
                   <li><a href="#">DC</a></li>
@@ -98,6 +97,8 @@ export default {
 
 footer{
   background-color: $footer-bg-color;
+  height: 100%;
+  width: 100%;
 }
 
 .footer_bg_image{
@@ -108,25 +109,24 @@ footer{
 }
 
 .footer_top{
-
-  padding: 5px 0;
   @include flex-sbtw();
   color: aliceblue;
   width: 100%;
   height: auto;
-  margin-top: -20px;
+  margin-top: 30px;
+  padding-bottom: 30px;
 
   .col_left{
-    width: 70%;
+    width: 100%;
   }
   
   .col_right{
     @include flex-cnt();
-    width: 30%;
+    width: 100%;
     height: 100%;
     img{
-      width: 100%;
-      scale: 150%;
+      width: 50%;
+      scale: 210%;
     }
   }
 
@@ -154,6 +154,8 @@ footer{
 
 .footer_bottom{
   padding: 35px 0;
+  width: 100%;
+  height: auto;
   @include flex-sbtw();
   
   .sign_up{
