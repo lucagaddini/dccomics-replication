@@ -7,7 +7,7 @@
 
     <nav>
       <ul>
-        <li><a href="#">Link 1 </a></li>
+        <li class="active"><a href="#">Link 1 </a></li>
         <li><a href="#">Link 2</a></li>
         <li><a href="#">Link 3</a></li>
         <li><a href="#">Link 4</a></li>
@@ -42,8 +42,12 @@ header{
       padding: 15px;
       line-height: 136px;
       
-      &:hover{
+      &:hover,
+      &.active{
           box-shadow: inset 0 -5px 0 $primary-color;
+      }
+      &.active a{
+          color: $primary-color;
       }
 
       a {
@@ -53,7 +57,6 @@ header{
         font-weight: bold;
         &:hover{
           color: $primary-color;
-
         }
       }
     }
