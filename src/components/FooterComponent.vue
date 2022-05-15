@@ -69,11 +69,7 @@
           <div class="follow_us_box">
             <span>Follow us</span>
             <div class="social_icons">
-              <a href="#"><img src="../assets/img/footer-facebook.png" alt="Facebook Logo"></a>
-              <a href="#"><img src="../assets/img/footer-twitter.png" alt="Twitter Logo"></a>
-              <a href="#"><img src="../assets/img/footer-youtube.png" alt="Youtube Logo"></a>
-              <a href="#"><img src="../assets/img/footer-pinterest.png" alt="Pinterest Logo"></a>
-              <a href="#"><img src="../assets/img/footer-periscope.png" alt="Periscope Logo"></a>
+              <a v-for="(social,index) in socials" :key="`social-${index}`" :href="social.link"><img :src="social.icon" :alt="social.name"></a>
             </div>
 
           </div>
@@ -85,8 +81,52 @@
 </template>
 
 <script>
+
+import firstSocial from '../assets/img/footer-facebook.png';
+import secondSocial from '../assets/img/footer-twitter.png';
+import thirdSocial from '../assets/img/footer-youtube.png';
+import fourthSocial from '../assets/img/footer-pinterest.png';
+import fifthSocial from '../assets/img/footer-periscope.png';
+
+
 export default {
-  name: 'FooterComponent'
+  name: 'FooterComponent',
+  data(){
+    return{
+      socials: [
+        {
+          name:'Facebook',
+          link:'https://www.facebook.com/dc',
+          icon: firstSocial
+
+        },
+        {
+          name:'Twitter',
+          link:'https://twitter.com/dccomics',
+          icon: secondSocial
+
+        },
+        {
+          name:'Youtube',
+          link:'http://www.youtube.com/user/DCEntertainmentTV',
+          icon: thirdSocial
+
+        },
+        {
+          name:'Pinterest',
+          link:'http://www.pinterest.com/dccomics/',
+          icon: fourthSocial
+
+        },
+        {
+          name:'Periscope',
+          link:'https://www.periscope.tv/DCComics',
+          icon: fifthSocial
+
+        },
+        ]
+    }
+  }
 }
 </script>
 

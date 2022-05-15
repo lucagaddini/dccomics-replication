@@ -4,7 +4,7 @@
 
       <div v-for="(merchLink,index) in merchLinks" :key="`merchMenu-${index}`" class="card_box">
         <a :href="merchLink.link">
-          <img :src="merchLink.img" :alt="merchLink.text">
+          <img :src="merchLink.icon" :alt="merchLink.text">
           <span>{{merchLink.text}}</span>
         </a>
       </div>
@@ -29,27 +29,27 @@ export default {
         merchLinks: [
           { text:'Digital Comics',
             link:'#',
-            img: firstImage
+            icon: firstImage
 
           },
           { text:'DC Merchandise',
             link:'#',
-            img: secondImage
+            icon: secondImage
 
           },
           { text:'Subscription',
             link:'#',
-            img: thirdImage
+            icon: thirdImage
 
           },
           { text:'Comic Shop Locator',
             link:'#',
-            img: fourthImage
+            icon: fourthImage
 
           },
           { text:'DC Power Visa',
             link:'#',
-            img: fifthImage
+            icon: fifthImage
 
           },
         ]
