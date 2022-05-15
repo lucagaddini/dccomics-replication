@@ -5,7 +5,7 @@
           <div class="col_left">
             <div class="row">
 
-              <div class="col-3 px-3">
+              <div class="col-2 py-5">
                 <div class="col_title">Dc Comics</div>
                 <ul>
                   <li><a href="#">Characters</a></li>
@@ -24,7 +24,7 @@
                 </ul>
               </div>
 
-              <div class="col-3 px-3">
+              <div class="col-2 py-5">
                 <div class="col_title">Dc</div>
                 <ul>
                   <li><a href="#">Terms of use</a></li>
@@ -41,7 +41,7 @@
                 </ul>
               </div>
 
-              <div class="col-3 px-3">
+              <div class="col-2 py-5">
                 <div class="col_title">Sites</div>
                 <ul>
                   <li><a href="#">DC</a></li>
@@ -54,10 +54,7 @@
 
             </div>
           </div>
-
-          <div class="col_right">
-            <img src="../assets/img/dc-logo-bg.png" alt=" DC Logo">
-          </div>
+          
         </div>
       </div>
 
@@ -153,23 +150,15 @@ footer{
   color: aliceblue;
   width: 100%;
   height: auto;
-  margin-top: 30px;
-  padding-bottom: 30px;
+  background-image: url(../assets/img/dc-logo-bg.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 50%;
 
   .col_left{
     width: 100%;
   }
   
-  .col_right{
-    @include flex-cnt();
-    width: 100%;
-    height: 100%;
-    img{
-      width: 50%;
-      scale: 210%;
-    }
-  }
-
   .col_title{
     text-transform: uppercase;
     font-weight: bold;
