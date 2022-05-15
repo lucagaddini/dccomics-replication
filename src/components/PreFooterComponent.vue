@@ -1,49 +1,60 @@
 <template>
   <section class="section_bg">
     <div class="card_container container-lg"> 
-      <div class="card_box">
-        <a href="#">
-          <img src="../assets/img/buy-comics-digital-comics.png" alt="Digital Comics">
-          <span>Digital Comics</span>
+
+      <div v-for="(merchLink,index) in merchLinks" :key="`merchMenu-${index}`" class="card_box">
+        <a :href="merchLink.link">
+          <img :src="merchLink.img" :alt="merchLink.text">
+          <span>{{merchLink.text}}</span>
         </a>
       </div>
-
-      <div class="card_box">
-        <a href="#">
-          <img src="../assets/img/buy-comics-merchandise.png" alt="DC Merchandise">
-          <span>DC Merchandise</span>
-        </a>
-      </div>
-
-      <div class="card_box">
-        <a href="#">
-          <img src="../assets/img/buy-comics-subscriptions.png" alt="Subscription">
-          <span>Subscription</span>
-        </a>
-      </div>
-
-      <div class="card_box">
-        <a href="#">
-          <img src="../assets/img/buy-comics-shop-locator.png" alt="Comic Shop Locator">
-          <span>Comic Shop Locator</span>
-        </a>
-      </div>
-
-      <div class="card_box">
-        <a href="#">
-          <img src="../assets/img/buy-dc-power-visa.svg" alt="DC Power Visa">
-          <span>DC Power Visa</span>
-        </a>
-      </div>
-
 
     </div>
   </section>
 </template>
 
 <script>
+
+import firstImage from '../assets/img/buy-comics-digital-comics.png';
+import secondImage from '../assets/img/buy-comics-merchandise.png';
+import thirdImage from '../assets/img/buy-comics-subscriptions.png';
+import fourthImage from '../assets/img/buy-comics-shop-locator.png';
+import fifthImage from '../assets/img/buy-dc-power-visa.svg';
+
+
 export default {
-  name: 'PreFooterComponent'
+  name: 'PreFooterComponent',
+  data(){
+    return {
+        merchLinks: [
+          { text:'Digital Comics',
+            link:'#',
+            img: firstImage
+
+          },
+          { text:'DC Merchandise',
+            link:'#',
+            img: secondImage
+
+          },
+          { text:'Subscription',
+            link:'#',
+            img: thirdImage
+
+          },
+          { text:'Comic Shop Locator',
+            link:'#',
+            img: fourthImage
+
+          },
+          { text:'DC Power Visa',
+            link:'#',
+            img: fifthImage
+
+          },
+        ]
+    }
+  }
 }
 </script>
 
