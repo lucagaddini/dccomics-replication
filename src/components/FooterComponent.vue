@@ -79,12 +79,6 @@
 
 <script>
 
-import firstSocial from '../assets/img/footer-facebook.png';
-import secondSocial from '../assets/img/footer-twitter.png';
-import thirdSocial from '../assets/img/footer-youtube.png';
-import fourthSocial from '../assets/img/footer-pinterest.png';
-import fifthSocial from '../assets/img/footer-periscope.png';
-
 
 export default {
   name: 'FooterComponent',
@@ -93,32 +87,32 @@ export default {
       socials: [
         {
           name:'Facebook',
-          link:'https://www.facebook.com/dc',
-          icon: firstSocial
+          link: '#',
+          icon: require('../assets/img/footer-facebook.png')
 
         },
         {
           name:'Twitter',
-          link:'https://twitter.com/dccomics',
-          icon: secondSocial
+          link: '#',
+          icon: require('../assets/img/footer-twitter.png')
 
         },
         {
           name:'Youtube',
-          link:'http://www.youtube.com/user/DCEntertainmentTV',
-          icon: thirdSocial
+          link: '#',
+          icon: require('../assets/img/footer-youtube.png')
 
         },
         {
           name:'Pinterest',
-          link:'http://www.pinterest.com/dccomics/',
-          icon: fourthSocial
+          link: '#',
+          icon: require('../assets/img/footer-pinterest.png')
 
         },
         {
           name:'Periscope',
-          link:'https://www.periscope.tv/DCComics',
-          icon: fifthSocial
+          link: '#',
+          icon: require('../assets/img/footer-periscope.png')
 
         },
         ]

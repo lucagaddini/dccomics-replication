@@ -15,13 +15,6 @@
 
 <script>
 
-import firstImage from '../assets/img/buy-comics-digital-comics.png';
-import secondImage from '../assets/img/buy-comics-merchandise.png';
-import thirdImage from '../assets/img/buy-comics-subscriptions.png';
-import fourthImage from '../assets/img/buy-comics-shop-locator.png';
-import fifthImage from '../assets/img/buy-dc-power-visa.svg';
-
-
 export default {
   name: 'PreFooterComponent',
   data(){
@@ -29,27 +22,27 @@ export default {
         merchLinks: [
           { text:'Digital Comics',
             link:'#',
-            icon: firstImage
+            icon: require ('../assets/img/buy-comics-digital-comics.png')
 
           },
           { text:'DC Merchandise',
             link:'#',
-            icon: secondImage
+            icon: require ('../assets/img/buy-comics-merchandise.png')
 
           },
           { text:'Subscription',
             link:'#',
-            icon: thirdImage
+            icon: require ('../assets/img/buy-comics-subscriptions.png')
 
           },
           { text:'Comic Shop Locator',
             link:'#',
-            icon: fourthImage
+            icon: require ('../assets/img/buy-comics-shop-locator.png')
 
           },
           { text:'DC Power Visa',
             link:'#',
-            icon: fifthImage
+            icon: require ('../assets/img/buy-dc-power-visa.svg')
 
           },
         ]
